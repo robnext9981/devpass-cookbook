@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
 
    # Every Vagrant development environment requires a box. You can search for
    # boxes at https://atlas.hashicorp.com/search.
-   config.vm.box = "bento/centos-6.7"
+   devpass.vm.box = "centos-6.7"
    config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.7_chef-provisionerless.box"
    config.omnibus.chef_version= :latest
 
@@ -50,7 +50,6 @@ Vagrant.configure(2) do |config|
       # Display the VirtualBox GUI when booting the machine
       vb.gui = false
       vb.name = "devpass-centos-6.7"
-
       # Customize the amount of memory on the VM:
       vb.memory = "1024"
     end
